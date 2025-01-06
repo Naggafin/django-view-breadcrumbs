@@ -38,8 +38,8 @@ class DeleteBreadcrumbMixin(DetailBreadcrumbMixin):
 
     def delete_view_label(self, instance):
         if self.delete_format_string:
-            return self.delete_format_string % {'instance': force_str(instance)}
-        return _("Delete %(instance)s") % {'instance': force_str(instance)}
+            return self.delete_format_string % {"instance": force_str(instance)}
+        return _("Delete %(instance)s") % {"instance": force_str(instance)}
 
     @property
     def crumbs(self):

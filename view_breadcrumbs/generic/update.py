@@ -42,8 +42,8 @@ class UpdateBreadcrumbMixin(DetailBreadcrumbMixin):
 
     def update_view_label(self, instance):
         if self.update_format_string:
-            return self.update_format_string % {'instance': force_str(instance)}
-        return _("Update %(instance)s") % {'instance': force_str(instance)}
+            return self.update_format_string % {"instance": force_str(instance)}
+        return _("Update %(instance)s") % {"instance": force_str(instance)}
 
     @property
     def crumbs(self):
